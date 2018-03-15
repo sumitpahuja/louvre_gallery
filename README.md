@@ -1,24 +1,10 @@
-# README
+Version Required to Run this App:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version- 2.3.1
+* Rails Version- 5.1.5
+* No database required, only for analysis of log files
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
+* Open On:
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

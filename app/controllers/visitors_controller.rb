@@ -4,15 +4,15 @@ class VisitorsController < ApplicationController
   end
 
   def import
-  	main_hash = {}
+  	_main_hash = {}
     CSV.foreach(params[:file].path, headers: false, col_sep: "\s") do |row|
       next if row.count < 4	
-      main_hash[row[1]] ||= {}
-      main_hash[row[1]][row[0]] ||= {in: [], out: []}
-      main_hash[row[1]][row[0]][:in] << row[3] if row[2] == 'I'
-      main_hash[row[1]][row[0]][:out] << row[3] if row[2] == 'O'
+      _main_hash[row[1]] ||= {}
+      _main_hash[row[1]][row[0]] ||= {in: [], out: []}
+      _main_hash[row[1]][row[0]][:in] << row[3] if row[2] == 'I'
+      _main_hash[row[1]][row[0]][:out] << row[3] if row[2] == 'O'
     end
-    @result = display_result(main_hash)
+    @result = display_result(_main_hash)
   end
 
   def time_spent_total(in_tm, out_tm)
