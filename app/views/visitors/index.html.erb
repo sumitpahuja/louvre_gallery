@@ -1,0 +1,9 @@
+<h2> Louvre Gallery</h2>
+
+<h4> Please upload log file for analysis.</h4>
+
+<%= form_tag visitors_import_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Upload Log File" %>
+<% end %>
+

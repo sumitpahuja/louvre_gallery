@@ -1,0 +1,5 @@
+<h2>Analysis of users visit in Gallery Room:</h2>
+<% @result.each do |val| %>
+	<!-- <h5><%= val %></h5> -->
+	<h5><%= "Room #{val[:room_id]}, #{val[:avg_time]} minute average visit, #{val[:user_count]} visitor(s) total" %></h5>
+<% end %>
