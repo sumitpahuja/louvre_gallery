@@ -1,5 +1,5 @@
 Version Required to Run this App:
-
+Set Up Option
 * Ruby version- 2.3.1
 * Rails Version- 5.1.5
 * No database required, only for analysis of log files
